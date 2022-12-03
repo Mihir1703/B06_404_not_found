@@ -19,11 +19,17 @@ import UserTable from './Components/Admin/UserTable'
 import Exit from './Components/GeneratePass/Exit'
 import Entry from './Components/GeneratePass/Entry'
 import ShowEntry from './Components/GeneratePass/ShowEntry'
+import PendingFines from './Components/Fine/PendingFines'
+import FineForm from './Components/Admin/FineForm'
+import FilledFines from './Components/Fine/FilledFine'
+import PaidAdmin from './Components/Admin/PaidAdmin'
+import FineStart from './Components/Fine/FineStart'
+import FineBoard from './Components/Admin/FineBoard'
 
 const routes = {
     '/signup': <Register />,
     '/login': <Login />,
-    '/profile': <Profile />,
+    '/profile': <><Navbar/><Profile /></>,
     '/complaint/new': <ComplaintForm />,
     '/complaint': <><Navbar/><Dashboard /></>,
     '/allotRoom': <><Navbar/><RoomAllot /></>,
@@ -36,7 +42,13 @@ const routes = {
     '/admin/user': <><Navbar/><UserTable/></>,
     '/exit': <><Exit/></>,
     '/entry': <><Entry/></>,
+    '/admin/fineForm': <><Navbar/><FineForm/></>,
     '/pass_data': <><Navbar/><ShowEntry/></>,
+    '/pending_fines': <><Navbar/><PendingFines/></>,
+    '/paid_fines': <><Navbar/><FilledFines/></>,
+    '/admin/paidFines': <><Navbar/><PaidAdmin/></>,
+    '/fine': <><Navbar/><FineStart/></>,
+    '/admin/fineBoard': <><Navbar/><FineBoard/></>,
     '*': <><Error/></>
 }
 

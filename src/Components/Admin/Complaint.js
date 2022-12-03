@@ -28,8 +28,9 @@ const Complaint = () => {
     useEffect(() => {
         console.log(cookies.get('admin'));
         if (cookies.get('admin') == false || cookies.get('admin') == undefined) {
-            history('/');
+            history('/complaint');
         }
+        
         if (!cookies.get('token')) {
             history('/login');
         }
