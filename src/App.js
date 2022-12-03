@@ -14,20 +14,25 @@ import RoomAllotAdmin from './Components/Admin/RoomAllotAdmin'
 import Home from './Components/Home'
 import Notice from './Components/Notice/Notice'
 import NoticeForm from './Components/Admin/NoticeForm'
+import UserDashboard from './Components/UserDashboard'
+import UserTable from './Components/Admin/UserTable'
+import Demo from './Components/Demo'
 
 const routes = {
+    '/demo': <Demo />,
     '/signup': <Register />,
     '/login': <Login />,
     '/profile': <Profile />,
     '/complaint/new': <ComplaintForm />,
     '/complaint': <><Navbar/><Dashboard /></>,
     '/allotRoom': <><Navbar/><RoomAllot /></>,
-    '/': <><Navbar/><Home/></>,
+    '/': <><Navbar/><Home/><UserDashboard /></>,
     '/admin/complaint': <><Navbar/><Complaint /></>,
     '/admin/dashboard': <><Navbar/><AdminDashboard /></>,
     '/admin/roomRequest': <><Navbar/><RoomAllotAdmin /></>,
     '/notice': <><Navbar/><Notice/></>,
     '/admin/notice': <><Navbar/><NoticeForm/></>,
+    '/admin/user': <><Navbar/><UserTable/></>,
     '*': <><Error/></>
 }
 

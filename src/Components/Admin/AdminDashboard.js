@@ -48,7 +48,7 @@ const AdminDashboard = () => {
               </p>
               <a onClick={()=>{
                 history('/admin/roomRequest');
-              }} class="text-indigo-500 inline-flex items-center cursor-pointer">More
+              }} class="text-indigo-500 inline-flex items-center cursor-pointer">Click Here
                 <svg class="w-4 h-4 ml-2"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -71,7 +71,9 @@ const AdminDashboard = () => {
               <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">View All Students
               </h1>
               <p class="leading-relaxed mb-3">View the list of all students who have signed up.</p>
-              <a class="text-indigo-500 inline-flex items-center cursor-pointer">More
+              <a onClick={()=>{
+                history('/admin/user');
+              }} class="text-indigo-500 inline-flex items-center cursor-pointer">Click Here
                 <svg class="w-4 h-4 ml-2"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -97,7 +99,7 @@ const AdminDashboard = () => {
               </p>
               <a class="text-indigo-500 inline-flex items-center cursor-pointer" onClick={()=>{
                 history('/admin/complaint')
-              }}>More
+              }}>Click Here
                 <svg class="w-4 h-4 ml-2"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -120,30 +122,7 @@ const AdminDashboard = () => {
               <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Gate Pass Request</h1>
               <p class="leading-relaxed mb-3">Approve or Reject gate pass of students.
               </p>
-              <a class="text-indigo-500 inline-flex items-center cursor-pointer">More
-                <svg class="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="p-4 lg:w-1/3">
-            <div
-              class="border-4 h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-              <div class="grid place-items-center mb-2"><img
-                src="https://img.icons8.com/external-photo3ideastudio-lineal-photo3ideastudio/64/null/external-hostel-building-photo3ideastudio-lineal-photo3ideastudio.png" />
-              </div>
-              <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Hostel Status</h1>
-              <p class="leading-relaxed mb-3">View the number of rooms that are alloted/unalloted.
-              </p>
-              <a class="text-indigo-500 inline-flex items-center cursor-pointer">More
+              <a class="text-indigo-500 inline-flex items-center cursor-pointer">Click Here
                 <svg class="w-4 h-4 ml-2"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -167,7 +146,7 @@ const AdminDashboard = () => {
               </p>
               <a onClick={()=>{
                 history('/admin/notice')
-              }} class="text-indigo-500 inline-flex items-center cursor-pointer">More
+              }} class="text-indigo-500 inline-flex items-center cursor-pointer">Click Here
                 <svg class="w-4 h-4 ml-2"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
