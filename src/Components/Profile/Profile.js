@@ -27,6 +27,9 @@ const Profile = () => {
             console.log(response.data)
         })
     }, [])
+    setTimeout(() => {
+        document.getElementById('warn').style.display = 'none';
+    }, 10_000)
     return (
         <>
             <div class="bg-gray-100">
@@ -54,11 +57,14 @@ const Profile = () => {
                             {user.firstName} {user.lastName}
                         </h1>
                         <h3 class="text-gray-600 font-lg text-semibold leading-6 grid place-items-center">
-                            Student
+                            {user.userType === 'admin' ? 'Warden' : 'Student'}
                         </h3>
                     </div>
                 </div>
                 <div class="container mx-auto my-5 p-5">
+                    {user.roomNumber == 0 && <div id="warn" class="p-4 mb-4 text-sm text-yellow-700 bg-yellow-100 rounded-lg dark:bg-yellow-200 dark:text-yellow-800" role="alert">
+                        Your room allotment request is currently under review.
+                    </div>}
                     <div class="md:flex no-wrap md:-mx-2">
                         <div class="w-full md:w-100 mx-2 h-64 border-8 rounded-xl border-gray-900">
                             <div class="bg-white p-3 shadow-sm rounded-sm">
@@ -90,7 +96,7 @@ const Profile = () => {
                                         </div>
                                         <div class="grid grid-cols-2">
                                             <div class="px-4 py-2 font-semibold">Current Address</div>
-                                            <div class="px-4 py-2">Room No : {user.hostelAlloted}</div>
+                                            <div class="px-4 py-2">Hoste No : {user.hostelAlloted} Room No : {user.roomNumber}</div>
                                         </div>
                                         <div class="grid grid-cols-2">
                                             <div class="px-4 py-2 font-semibold">Permanant Address</div>

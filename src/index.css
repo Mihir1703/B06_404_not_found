@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 body {
   margin: 0;
@@ -16,6 +17,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 :root {
   --main-color: black;
 }
@@ -30,4 +32,52 @@ code {
 
 .border-main-color {
   border-color: var(--main-color);
+}
+
+/*======================
+    404 page
+=======================*/
+
+
+.page_404 {
+  padding: 40px 0;
+  background: #fff;
+  font-family: 'Arvo', serif;
+}
+
+.page_404 img {
+  width: 100%;
+}
+
+.four_zero_four_bg {
+
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  height: 400px;
+  background-position: center;
+}
+
+
+.four_zero_four_bg h1 {
+  font-size: 80px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.four_zero_four_bg h3 {
+  font-size: 80px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.link_404 {
+  color: #fff !important;
+  padding: 10px 20px;
+  background: #39ac31;
+  margin: 20px 0;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 5px;
+}
+
+.contant_box_404 {
+  margin-top: -50px;
+  font-family: 'Roboto', sans-serif;
 }

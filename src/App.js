@@ -6,6 +6,8 @@ import Profile from './Components/Profile/Profile'
 import ComplaintForm from './Components/Complaint/Form'
 import Dashboard from './Components/Complaint/Dashboard'
 import { Navbar } from './Components/Navbar'
+import RoomAllot from './Components/Profile/RoomAllot'
+import Error from './Components/Error'
 
 const routes = {
     '/signup': <Register />,
@@ -13,7 +15,9 @@ const routes = {
     '/profile': <Profile />,
     '/complaint/new': <ComplaintForm />,
     '/complaint': <><Navbar/><Dashboard /></>,
-    '*': <></>
+    '/allotRoom': <><Navbar/><RoomAllot /></>,
+    '/': <><Navbar/></>,
+    '*': <><Error/></>
 }
 
 const App = () => {

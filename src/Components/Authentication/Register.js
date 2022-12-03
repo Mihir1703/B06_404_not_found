@@ -38,6 +38,7 @@ const Register = () => {
       email: data.get('email'),
       password: data.get('password'),
       scholarId: data.get('scholarID'),
+      year: data.get('year'),
       mobileNumber: data.get('mobile'),
     }
     console.log(data);
@@ -106,6 +107,66 @@ const Register = () => {
                 <input
                   class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" name='mobile'
                   id="mob" type="number" placeholder="Mobile No." />
+              </div>
+              <div class="my-5">
+                <label class="my-5 text-gray-700 dark:text-gray-200 text-xl"
+                  for="invest">Year of Study</label>
+
+                <fieldset class="my-3" id="fields-pay">
+                  <div class="flex items-center my-4">
+                    <input id="country-option-1"
+                      type="radio"
+                      name="year"
+                      value="1"
+                      class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600"
+                      aria-labelledby="country-option-3"
+                      aria-describedby="country-option-3" />
+                    <label for="country-option-3"
+                      class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                      1
+                    </label>
+                  </div>
+                  <div class="flex items-center my-4">
+                    <input id="country-option-${index + 1}"
+                      type="radio"
+                      name="year"
+                      value="2"
+                      class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600"
+                      aria-labelledby="country-option-3"
+                      aria-describedby="country-option-3" />
+                    <label for="country-option-3"
+                      class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                      2
+                    </label>
+                  </div>
+                  <div class="flex items-center my-4">
+                    <input id="country-option-${index + 1}"
+                      type="radio"
+                      name="year"
+                      value="3"
+                      class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600"
+                      aria-labelledby="country-option-3"
+                      aria-describedby="country-option-3" />
+                    <label for="country-option-3"
+                      class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                      3
+                    </label>
+                  </div>
+                  <div class="flex items-center my-4">
+                    <input id="country-option-${index + 1}"
+                      type="radio"
+                      name="year"
+                      value="4"
+                      class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600"
+                      aria-labelledby="country-option-3"
+                      aria-describedby="country-option-3" />
+                    <label for="country-option-3"
+                      class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                      4
+                    </label>
+                  </div>
+                </fieldset>
+
               </div>
               <div class="mb-4 md:flex md:justify-between">
                 <div class="mb-4 md:mr-2 md:mb-0">
