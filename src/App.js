@@ -16,10 +16,11 @@ import Notice from './Components/Notice/Notice'
 import NoticeForm from './Components/Admin/NoticeForm'
 import UserDashboard from './Components/UserDashboard'
 import UserTable from './Components/Admin/UserTable'
-import Demo from './Components/Demo'
+import Exit from './Components/GeneratePass/Exit'
+import Entry from './Components/GeneratePass/Entry'
+import ShowEntry from './Components/GeneratePass/ShowEntry'
 
 const routes = {
-    '/demo': <Demo />,
     '/signup': <Register />,
     '/login': <Login />,
     '/profile': <Profile />,
@@ -33,6 +34,9 @@ const routes = {
     '/notice': <><Navbar/><Notice/></>,
     '/admin/notice': <><Navbar/><NoticeForm/></>,
     '/admin/user': <><Navbar/><UserTable/></>,
+    '/exit': <><Exit/></>,
+    '/entry': <><Entry/></>,
+    '/pass_data': <><Navbar/><ShowEntry/></>,
     '*': <><Error/></>
 }
 
