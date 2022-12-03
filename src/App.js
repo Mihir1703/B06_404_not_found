@@ -3,11 +3,16 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Login from './Components/Authentication/Login'
 import Register from './Components/Authentication/Register'
 import Profile from './Components/Profile/Profile'
+import ComplaintForm from './Components/Complaint/Form'
+import Dashboard from './Components/Complaint/Dashboard'
+import { Navbar } from './Components/Navbar'
 
 const routes = {
     '/signup': <Register />,
     '/login': <Login />,
     '/profile': <Profile />,
+    '/complaint/new': <ComplaintForm />,
+    '/complaint': <><Navbar/><Dashboard /></>,
     '*': <></>
 }
 

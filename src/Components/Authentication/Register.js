@@ -136,7 +136,7 @@ const Register = () => {
               <hr class="mb-6 border-t" />
               <div class="text-center">
                 <a class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
-                  href="login.html">
+                  href="/login">
                   Already have an account? Login!
                 </a>
               </div>
