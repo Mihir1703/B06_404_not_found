@@ -62,7 +62,7 @@ const Profile = () => {
                     </div>
                 </div>
                 <div class="container mx-auto my-5 p-5">
-                    {user.roomNumber == 0 && <div id="warn" class="p-4 mb-4 text-sm text-yellow-700 bg-yellow-100 rounded-lg dark:bg-yellow-200 dark:text-yellow-800" role="alert">
+                    {user.roomNumber == 0 && user.userType !== 'admin' && <div id="warn" class="p-4 mb-4 text-sm text-yellow-700 bg-yellow-100 rounded-lg dark:bg-yellow-200 dark:text-yellow-800" role="alert">
                         Your room allotment request is currently under review.
                     </div>}
                     <div class="md:flex no-wrap md:-mx-2">

@@ -8,6 +8,12 @@ import Dashboard from './Components/Complaint/Dashboard'
 import { Navbar } from './Components/Navbar'
 import RoomAllot from './Components/Profile/RoomAllot'
 import Error from './Components/Error'
+import Complaint from './Components/Admin/Complaint'
+import AdminDashboard from './Components/Admin/AdminDashboard'
+import RoomAllotAdmin from './Components/Admin/RoomAllotAdmin'
+import Home from './Components/Home'
+import Notice from './Components/Notice/Notice'
+import NoticeForm from './Components/Admin/NoticeForm'
 
 const routes = {
     '/signup': <Register />,
@@ -16,7 +22,12 @@ const routes = {
     '/complaint/new': <ComplaintForm />,
     '/complaint': <><Navbar/><Dashboard /></>,
     '/allotRoom': <><Navbar/><RoomAllot /></>,
-    '/': <><Navbar/></>,
+    '/': <><Navbar/><Home/></>,
+    '/admin/complaint': <><Navbar/><Complaint /></>,
+    '/admin/dashboard': <><Navbar/><AdminDashboard /></>,
+    '/admin/roomRequest': <><Navbar/><RoomAllotAdmin /></>,
+    '/notice': <><Navbar/><Notice/></>,
+    '/admin/notice': <><Navbar/><NoticeForm/></>,
     '*': <><Error/></>
 }
 

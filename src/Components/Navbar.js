@@ -5,6 +5,11 @@ import { useNavigate } from 'react-router-dom';
 export const Navbar = () => {
     const cookies = new Cookies();
     const history = useNavigate();
+    const handleLogOut = async () => {
+        cookies.remove('token');
+        cookies.remove('admin');
+        history('/login');
+    }
     useEffect(() => {
         if (!cookies.get('token')) {
             history('/login');
@@ -21,11 +26,8 @@ export const Navbar = () => {
                 <div class="text-sm lg:flex-grow">
                 </div>
                 <div>
-                    <a href="#" onClick={() => {
-                        cookies.remove('token');
-                        history('/login');
-                    }}
-                        class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-black hover:bg-white mt-4 lg:mt-0">Logout</a>
+                    <div onClick={handleLogOut}
+                        class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-black hover:bg-white mt-4 lg:mt-0">Logout</div>
                 </div>
             </div>
         </nav>

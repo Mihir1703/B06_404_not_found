@@ -35,7 +35,7 @@ const Form = () => {
                     icon: 'success',
                     confirmButtonText: 'Ok'
                 }).then(() => {
-                    history('/profile');
+                    history('/complaint');
                 })
             } else {
                 Swal.fire({
