@@ -12,7 +12,7 @@ const ShowEntry = () => {
         if (!cookies.get('token')) {
             history('/login');
         }
-        axios.post('/record/data_all', {}, {
+        axios.post('https://b06-404-not-found.vercel.app/record/data_all', {}, {
             headers: {
                 'Content-Type': 'application/json',
                 'auth-token': cookies.get('token')

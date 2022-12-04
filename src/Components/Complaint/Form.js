@@ -22,7 +22,7 @@ const Form = () => {
             content: data.get('content'),
             category: data.get('countries'),
         };
-        axios.post('/complaint/add', object, {
+        axios.post('https://b06-404-not-found.vercel.app/complaint/add', object, {
             headers: {
                 'Content-Type': 'application/json',
                 'auth-token': cookies.get('token')

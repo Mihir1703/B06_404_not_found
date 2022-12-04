@@ -8,7 +8,7 @@ const UserTable = () => {
     const cookies = new Cookies();
     const [users, setUsers] = React.useState([]);
     const fetchUsers = async () => {
-        let req = await axios.post('/admin/users', {}, {
+        let req = await axios.post('https://b06-404-not-found.vercel.app/admin/users', {}, {
             headers: {
                 'Content-Type': 'application/json',
                 'auth-token': cookies.get('token')

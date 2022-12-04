@@ -7,7 +7,7 @@ const Exit = () => {
     const cookies = new Cookies()
     const [data,setData] = useState('')
     useEffect(()=>{
-        axios.post('/record/data_entry',{},{
+        axios.post('https://b06-404-not-found.vercel.app/record/data_entry',{},{
             headers:{
                 'Content-Type':'application/json',
                 'auth-token':cookies.get('token')

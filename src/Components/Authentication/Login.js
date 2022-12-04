@@ -25,7 +25,7 @@ const Login = () => {
       password: data.get('password'),
       scholarId: data.get('scholarID'),
     }
-    let req = await axios.post('/user/login', data);
+    let req = await axios.post('https://b06-404-not-found.vercel.app/user/login', data);
     let json = await req.data;
     if (json.status === 'success') {
       cookies.set('token', json.token);

@@ -13,7 +13,7 @@ const Profile = () => {
         if (!cookies.get('token')) {
             history('/signup');
         }
-        axios.post('/user/profile', {}, {
+        axios.post('https://b06-404-not-found.vercel.app/user/profile', {}, {
             headers: {
                 'Content-Type': 'application/json',
                 'auth-token': cookies.get('token')

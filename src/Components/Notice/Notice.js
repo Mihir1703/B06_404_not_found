@@ -8,7 +8,7 @@ const Notice = () => {
     const cookies = new Cookies();
     const [notice, setnotice] = useState(undefined);
     const fetchComplaints = async () => {
-        await axios.post('/notice/get', {}, {
+        await axios.post('https://b06-404-not-found.vercel.app/notice/get', {}, {
             headers: {
                 'auth-token': cookies.get('token')
             }

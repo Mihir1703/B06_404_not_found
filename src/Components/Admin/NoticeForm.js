@@ -11,7 +11,7 @@ const NoticeForm = () => {
         e.preventDefault();
         let data = new FormData(e.target);
         console.log({ title:data.get('title'), description:data.get('description') });
-        await axios.post('/notice/add', { title:data.get('title'), description:data.get('description') }, {
+        await axios.post('https://b06-404-not-found.vercel.app/notice/add', { title:data.get('title'), description:data.get('description') }, {
             headers: {
                 'auth-token': cookies.get('token')
             }

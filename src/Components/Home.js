@@ -9,7 +9,7 @@ const Home = () => {
     });
     const cookies = new Cookies();
     useEffect(()=>{
-        axios.post('/notice/top',{},{
+        axios.post('https://b06-404-not-found.vercel.app/notice/top',{},{
             headers:{
                 'auth-token':cookies.get('token'),
                 'Content-Type':'application/json'

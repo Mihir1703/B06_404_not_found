@@ -16,7 +16,7 @@ const FineForm = () => {
             amount: data.get('amount'),
             reason: data.get('reason')
         });
-        await axios.post('/admin/addFine', {
+        await axios.post('https://b06-404-not-found.vercel.app/admin/addFine', {
             scholarId: data.get('scholarId'),
             amount: data.get('amount'),
             reason: data.get('reason')

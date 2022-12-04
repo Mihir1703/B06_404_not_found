@@ -8,7 +8,7 @@ const PaidAdmin = () => {
     const cookies = new Cookies();
     const [fines, setFines] = useState(undefined);
     const fetchComplaints = async () => {
-        axios.post('/admin/paid_fines', {}, {
+        axios.post('https://b06-404-not-found.vercel.app/admin/paid_fines', {}, {
             headers: {
                 'auth-token': cookies.get('token'),
                 'Content-Type': 'application/json'

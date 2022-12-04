@@ -27,7 +27,7 @@ const RoomAllot = () => {
             })
             return;
         }
-        const req = await axios.post('/room/allot', object, {
+        const req = await axios.post('https://b06-404-not-found.vercel.app/room/allot', object, {
             headers: {
                 'Content-Type': 'application/json',
                 'auth-token': cookies.get('token')

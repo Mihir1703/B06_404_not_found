@@ -11,7 +11,7 @@ const Complaint = () => {
     const [complaints, setComplaints] = useState(undefined);
     const [loading, setLoading] = useState(true);
     const fetchComplaints = async () => {
-        await axios.post('/complaint/get', {}, {
+        await axios.post('https://b06-404-not-found.vercel.app/complaint/get', {}, {
             headers: {
                 'auth-token': cookies.get('token')
             }
@@ -54,7 +54,7 @@ const Complaint = () => {
                             </a>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{complaint.content}</p>
                             <a href="#" onClick={() => {
-                                axios.post('/admin/complaint/resolved', {
+                                axios.post('https://b06-404-not-found.vercel.app/admin/complaint/resolved', {
                                     complaintId: complaint._id
                                 }, {
                                     headers: {

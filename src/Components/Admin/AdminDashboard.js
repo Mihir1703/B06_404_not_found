@@ -10,7 +10,7 @@ const AdminDashboard = () => {
   const cookies = new Cookies();
   const history = useNavigate();
   const fetchComplaints = async () => {
-    let req = await axios.post('/admin/dashboard', {}, {
+    let req = await axios.post('https://b06-404-not-found.vercel.app/admin/dashboard', {}, {
       headers: {
         'Content-Type': 'application/json',
         'auth-token': cookies.get('token')

@@ -9,7 +9,7 @@ const RoomAllotAdmin = () => {
     const cookies = new Cookies();
     const [roomRequests, setRoomRequests] = useState(undefined);
     const fetchComplaints = async () => {
-        await axios.post('/admin/room/request', {}, {
+        await axios.post('https://b06-404-not-found.vercel.app/admin/room/request', {}, {
             headers: {
                 'auth-token': cookies.get('token')
             }
@@ -102,7 +102,7 @@ const RoomAllotAdmin = () => {
                                         </li>
                                         <li class="py-3 grid place-items-center">
                                             <a onClick={() => {
-                                                axios.post('/admin/allotRoom', {
+                                                axios.post('https://b06-404-not-found.vercel.app/admin/allotRoom', {
                                                     id: roomRequest._id
                                                 }, {
                                                     headers: {
