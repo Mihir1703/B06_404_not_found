@@ -63,7 +63,7 @@ const AdminDashboard = () => {
                     </span>
 
                     <div class="mt-4 md:mx-4 md:mt-0">
-                        <h1 class="text-2xl font-medium text-gray-700 capitalize dark:text-white">Room Allot Request({complaints})</h1>
+                        <h1 class="text-2xl font-medium text-gray-700 capitalize dark:text-white">Room Allotment Request({request})</h1>
 
                         <p class="mt-3 text-gray-500 dark:text-gray-300">
                         Review all requests for room allotment made by students.

@@ -46,6 +46,8 @@ export const Navbar = () => {
                         <Link class="my-2 text-white transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-100 dark:hover:text-blue-400 md:mx-4 md:my-0" to={"/admin/complaint"}>Complaint</Link>
                         <Link class="my-2 text-white transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-100 dark:hover:text-blue-400 md:mx-4 md:my-0" to="/pass_data">Gate Pass</Link>
                         <Link class="my-2 text-white transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-100 dark:hover:text-blue-400 md:mx-4 md:my-0" to="/admin/fineBoard">Fine</Link>
+                        
+                        <Link class="my-2 text-white transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-100 dark:hover:text-blue-400 md:mx-4 md:my-0" to="/notice">Notice</Link>
                     </div>
                     <a class="cursor-pointer     my-2 text-white transition-colors duration-300 transform dark:text-gray-200 hover:text-white dark:hover:text-blue-400 md:mx-4 md:my-0" onClick={() => {
                         handleLogOut();

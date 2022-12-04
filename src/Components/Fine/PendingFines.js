@@ -71,7 +71,7 @@ const PendingFines = () => {
                                     }).then((response) => {
                                         Swal.fire({
                                             title: 'Success',
-                                            text: "Upvoted Successfully",
+                                            text: "Paid Successfully",
                                             icon: 'success',
                                             confirmButtonText: 'Ok'
                                         }).then(() => {
@@ -79,7 +79,7 @@ const PendingFines = () => {
                                         })
                                     })
                                 }}
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-black focus:ring-4 focus:outline-none ">
+                                    class="inline-flex mt-5 items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-black focus:ring-4 focus:outline-none ">
                                     Pay
                                 </a>
                             </div>

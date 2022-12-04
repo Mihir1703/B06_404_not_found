@@ -56,7 +56,7 @@ const Login = () => {
             <form class="px-8 pt-6 pb-8 mb-4 bg-white rounded" onSubmit={handleSubmit}>
               <div class="mb-4">
                 <label class="block mb-2 text-sm font-bold text-gray-700" for="email">
-                  ScholarID
+                  User ID
                 </label>
                 <input
                   class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" name='scholarID'

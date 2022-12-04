@@ -34,7 +34,7 @@ const FineStart = () => {
                 </div>
 
                 <div class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2 rounded-xl">
-                    <img class="w-full h-full lg:max-w-xl rounded-xl" src="https://images.unsplash.com/photo-1591814116567-0ec18eabcf1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDg4MDd8MHwxfHNlYXJjaHwxNXx8V2FuZGVyaW5nfGVufDB8fHx8MTY3MDA5OTEzMg&ixlib=rb-4.0.3&q=80&w=1080" alt="Catalogue-pana.svg" />
+                    <img class="w-full h-full lg:max-w-md rounded-xl" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/320/000000/external-guilty-emotions-and-emotional-intelligence-flaticons-lineal-color-flat-icons.png" alt="Catalogue-pana.svg" />
                 </div>
             </div>
         </div></>

@@ -142,7 +142,7 @@ const UserDashboard = () => {
                         <div class="p-6 border rounded-xl border-r-gray-200 dark:border-gray-700">
                             <div class="md:flex md:items-start md:-mx-4">
                                 <span class="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
-                                    <div class="grid place-items-center mb-2"><img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/null/external-id-card-interface-kiranshastry-lineal-kiranshastry.png" />
+                                    <div class="grid place-items-center mb-2"><img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/null/external-rupee-finance-kiranshastry-lineal-kiranshastry.png" />
                                     </div>
                                 </span>
 
@@ -155,6 +155,32 @@ const UserDashboard = () => {
                                     <div className="mt-5 flex justify-start w-full">
                                         <a onClick={() => {
                                             history('/fine')
+                                        }} class="cursor-pointer inline-flex p-2 text-blue-500 capitalize transition-colors duration-300 transform bg-blue-100 rounded-full rtl:-scale-x-100 dark:bg-blue-500 dark:text-white hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="p-6 border rounded-xl border-r-gray-200 dark:border-gray-700">
+                            <div class="md:flex md:items-start md:-mx-4">
+                                <span class="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
+                                    <div class="grid place-items-center mb-2"><img src="https://img.icons8.com/ios/64/null/assignment-late.png" />
+                                    </div>
+                                </span>
+
+                                <div class="mt-4 md:mx-4 md:mt-0">
+                                    <h1 class="text-2xl font-medium text-gray-700 capitalize dark:text-white">Notice</h1>
+
+                                    <p class="mt-3 text-gray-500 dark:text-gray-300">
+                                        Check the notices you have been issued.
+                                    </p>
+                                    <div className="mt-5 flex justify-start w-full">
+                                        <a onClick={() => {
+                                            history('/notice')
                                         }} class="cursor-pointer inline-flex p-2 text-blue-500 capitalize transition-colors duration-300 transform bg-blue-100 rounded-full rtl:-scale-x-100 dark:bg-blue-500 dark:text-white hover:underline hover:text-blue-600 dark:hover:text-blue-500">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />

@@ -32,7 +32,7 @@ const FineForm = () => {
                     text: 'Fine added successfully',
                     icon: 'success',
                 }).then(() => { })
-                // history('/pending_fines');
+                history('/admin/paidFines');
             } else {
                 history('/login');
             }
