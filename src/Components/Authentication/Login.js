@@ -13,6 +13,7 @@ const Login = () => {
   const cookies = new Cookies();
   const history = useNavigate();
   useEffect(() => {
+    console.log(cookies.get('token'));
     if (cookies.get('token') != undefined) {
       history('/');
     }
@@ -78,12 +79,12 @@ const Login = () => {
                 >
                   Log In
                 </button>
-            <div class="text-center">
-              <a class="inline-block mt-4 text-sm text-blue-500 align-baseline hover:text-blue-800"
-                href="/signup">
-                Create an account? Register!
-              </a>
-            </div>
+                <div class="text-center">
+                  <a class="inline-block mt-4 text-sm text-blue-500 align-baseline hover:text-blue-800"
+                    href="/signup">
+                    Create an account? Register!
+                  </a>
+                </div>
               </div>
             </form>
           </div>

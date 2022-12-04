@@ -9,7 +9,7 @@ export const Navbar = () => {
     const handleLogOut = async () => {
         cookies.remove('token');
         cookies.remove('admin');
-        history('/login');
+        window.location.href = '/login';
     }
     useEffect(() => {
         if (!cookies.get('token')) {
